@@ -41,7 +41,7 @@ Artist Id: ${el.id}
                 parse_mode: 'HTML',
                 reply_markup: {
                     inline_keyboard: [[
-                        { text: 'Artist Profile', callback_data: `artist_profile:${el.id}` }, { text: 'Visit Artist Spotify', url: `${el.external_urls.spotify}` }
+                        { text: 'Artist Profile', callback_data: `get_artist:${el.id}` }, { text: 'Visit Artist Spotify', url: `${el.external_urls.spotify}` }
                     ]]
                 }
             });
